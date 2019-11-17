@@ -1,0 +1,649 @@
+-- phpMyAdmin SQL Dump
+-- version 4.9.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Nov 16, 2019 at 08:32 PM
+-- Server version: 10.4.8-MariaDB
+-- PHP Version: 7.1.33
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+--
+-- Database: `sure`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `login_attempts`
+--
+
+CREATE TABLE `login_attempts` (
+  `user_id` int(11) NOT NULL,
+  `time` varchar(30) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
+  `extime` time NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `login_attempts`
+--
+
+INSERT INTO `login_attempts` (`user_id`, `time`, `extime`) VALUES
+(1, '1573928775', '07:26:15'),
+(1, '1573928787', '07:26:27'),
+(16, '1573928813', '07:26:53');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `privileges`
+--
+
+CREATE TABLE `privileges` (
+  `id` int(11) NOT NULL,
+  `role` text NOT NULL,
+  `purpose` text NOT NULL,
+  `date` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `privileges`
+--
+
+INSERT INTO `privileges` (`id`, `role`, `purpose`, `date`) VALUES
+(1, 'ADD USER', 'For adding new user', '2019-11-03'),
+(2, 'EDIT USER', 'For editing user information', '2019-11-03'),
+(3, 'DELETE USER', 'For deleting user information', '2019-11-03'),
+(4, 'VIEW USER', 'For viewing user information', '2019-11-03'),
+(5, 'ADD CASE', 'For adding new case', '2019-11-03'),
+(6, 'EDIT CASE', 'For editing existing case', '2019-11-03'),
+(7, 'DELETE CASE', 'For deleting existing case', '2019-11-03'),
+(8, 'VIEW CASE', 'For viewing existing case', '2019-11-03'),
+(9, 'ADD EXHIBIT', 'For adding new exhibit', '2019-11-03'),
+(10, 'EDIT EXHIBIT', 'For editing existing exhibit', '2019-11-03'),
+(11, 'DELETE EXHIBIT', 'For deleting existing exhibit', '2019-11-03'),
+(12, 'VIEW EXHIBIT', 'For viewing exhibit information', '2019-11-03'),
+(13, 'ADD DEPARTMENT', 'For adding new department', '2019-11-03'),
+(14, 'EDIT DEPARTMENT', 'For editing department information', '2019-11-03'),
+(15, 'DELETE DEPARTMENT', 'For deleting department information', '2019-11-03'),
+(16, 'VIEW DEPARTMENT', 'For viewing department information', '2019-11-03'),
+(17, 'ADD REGION', 'For adding new police region', '2019-11-03'),
+(18, 'EDIT REGION', 'For editing police region', '2019-11-03'),
+(19, 'DELETE REGION', 'For deleting existing police region', '2019-11-03'),
+(20, 'VIEW REGION', 'For viewing police region information', '2019-11-03'),
+(21, 'ADD DIVISION', 'For adding new police division', '2019-11-03'),
+(22, 'EDIT DIVISION', 'For editing police division information', '2019-11-03'),
+(23, 'DELETE DIVISION', 'For deleting police division information', '2019-11-03'),
+(24, 'VIEW DIVISION', 'For viewing police division information', '2019-11-03'),
+(25, 'ADD STATION', 'For adding new station', '2019-11-03'),
+(26, 'EDIT STATION', 'For editing police station information', '2019-11-03'),
+(27, 'DELETE STATION', 'For deleting police station information', '2019-11-03'),
+(28, 'VIEW STATION', 'For viewing police station information', '2019-11-03');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_agency`
+--
+
+CREATE TABLE `tbl_agency` (
+  `id` int(11) NOT NULL,
+  `countryid` int(11) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `contact` int(11) NOT NULL,
+  `email` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_agency`
+--
+
+INSERT INTO `tbl_agency` (`id`, `countryid`, `name`, `contact`, `email`) VALUES
+(1, 1, 'Save Wildlife ', 414355000, 'save@sure.com'),
+(2, 1, 'USAID', 773334444, 'usaid@sure.com'),
+(4, 1, 'NRCN', 773333333, 'nrcn@sure.com'),
+(5, 1, 'WCS', 778888888, 'wcs@sure.com');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_branch`
+--
+
+CREATE TABLE `tbl_branch` (
+  `id` int(11) NOT NULL,
+  `companyid` int(11) NOT NULL,
+  `branchname` varchar(50) NOT NULL,
+  `address` text NOT NULL,
+  `contact` varchar(11) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `districtid` int(11) NOT NULL,
+  `latitude` varchar(20) NOT NULL,
+  `longitude` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_branch`
+--
+
+INSERT INTO `tbl_branch` (`id`, `companyid`, `branchname`, `address`, `contact`, `email`, `districtid`, `latitude`, `longitude`) VALUES
+(1, 1, 'BWINDI MGAHINGA', 'Plot 7 Kira Rd Kampala', '0414355000', 'kb@yahoo.com', 1, '', ''),
+(2, 1, 'KIDEPO VALLEY NP', 'Plot 7 Kira Rd Kampala', '0414355000', 'kl@yahoo.com', 2, '', ''),
+(3, 1, 'KIBALE NP', 'Plot, 7 Kira Rd, Kampala', '0414', 'kca@uwa.org', 3, '', ''),
+(4, 1, 'MECA - MT ELGOT', 'Plot, 7 Kira Rd, Kampala', '0414', 'meca@uwa.org', 4, '', ''),
+(5, 1, 'MFCA - MURCHISON FALLS', 'Plot, 7 Kira Rd, Kampala', '0414', 'mfca@uwa.org', 13, '', ''),
+(6, 1, 'UWA - HQ', 'Plot, 7 Kira Rd, Kampala', '0414', 'uwa@uwa.org', 1, '', ''),
+(8, 1, 'QECA - QUEEN ELIZABETH', 'Plot, 7 Kira Rd, Kampala', '0414', 'qe@uwa.org', 2, '', ''),
+(9, 1, 'LMCA - LAKE MBURO', 'Plot, 7 Kira Rd, Kampala', '0414', 'lmca@uwa.org', 5, '', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_country`
+--
+
+CREATE TABLE `tbl_country` (
+  `id` int(11) NOT NULL,
+  `name` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_country`
+--
+
+INSERT INTO `tbl_country` (`id`, `name`) VALUES
+(1, 'Uganda'),
+(4, 'Kenya'),
+(5, 'Tanzania'),
+(6, 'Rwanda'),
+(7, 'Zambia');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_days`
+--
+
+CREATE TABLE `tbl_days` (
+  `id` int(11) NOT NULL,
+  `days` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tbl_days`
+--
+
+INSERT INTO `tbl_days` (`id`, `days`) VALUES
+(1, 7);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_district`
+--
+
+CREATE TABLE `tbl_district` (
+  `id` int(11) NOT NULL,
+  `name` varchar(20) NOT NULL,
+  `country` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tbl_district`
+--
+
+INSERT INTO `tbl_district` (`id`, `name`, `country`) VALUES
+(1, 'Kampala', 1),
+(2, 'Kaseese', 1),
+(3, 'Kibale', 1),
+(4, 'Mbale', 1),
+(5, 'Mbarara', 1),
+(6, 'Fort Portal', 1),
+(7, 'Kisoro', 1),
+(8, 'Kanungu', 1),
+(9, 'Isingiro', 1),
+(10, 'Rakai', 1),
+(11, 'Karamoja', 1),
+(12, 'Moroto', 1),
+(13, 'Masindi', 1),
+(14, 'Hoima', 1),
+(15, 'Nebbi', 1),
+(16, 'Arua', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_entities`
+--
+
+CREATE TABLE `tbl_entities` (
+  `id` int(11) NOT NULL,
+  `name` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_entities`
+--
+
+INSERT INTO `tbl_entities` (`id`, `name`) VALUES
+(1, 'Individual'),
+(2, 'Vehicle'),
+(3, 'Location'),
+(4, 'Exhibit'),
+(5, 'All');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_flag`
+--
+
+CREATE TABLE `tbl_flag` (
+  `id` int(11) NOT NULL,
+  `flagno` varchar(20) NOT NULL,
+  `flagdate` date NOT NULL,
+  `entityid` int(11) NOT NULL,
+  `comment` text NOT NULL,
+  `flagtime` varchar(8) NOT NULL,
+  `sessionuser` varchar(20) NOT NULL,
+  `agencyid` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_flag`
+--
+
+INSERT INTO `tbl_flag` (`id`, `flagno`, `flagdate`, `entityid`, `comment`, `flagtime`, `sessionuser`, `agencyid`) VALUES
+(1, 'SAV/11/2019/1', '2019-11-16', 1, '	Enter Individual name\r\n	Ayebare Peter\r\n	Enter Gender\r\n	Male\r\n	Enter Nationality\r\n	Ugandan\r\n		  ', '', 'lam', 1),
+(2, 'SAV/11/2019/2', '2019-11-16', 2, '	Enter Vehicle make\r\n	Toyota \r\n	Enter Vehicle model\r\n	Premio\r\n\r\n		  ', '4:08:26', 'lam', 1),
+(3, 'NRC/11/2019/3', '2019-11-16', 1, '	Enter Individual name\r\n	Annonymous person\r\n	Enter Gender\r\n	Male\r\n	Enter Nationality\r\n	Ugandan\r\n		  ', '7:50:24', 'david', 4);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_flagcase`
+--
+
+CREATE TABLE `tbl_flagcase` (
+  `id` int(11) NOT NULL,
+  `flagno` varchar(20) NOT NULL,
+  `startdate` date NOT NULL,
+  `enddate` date NOT NULL,
+  `createtime` varchar(8) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_flagcase`
+--
+
+INSERT INTO `tbl_flagcase` (`id`, `flagno`, `startdate`, `enddate`, `createtime`) VALUES
+(1, 'SAV/11/2019/1', '2019-11-16', '2019-11-23', '4:02:19'),
+(2, 'SAV/11/2019/2', '2019-11-16', '2019-11-16', '4:08:26'),
+(3, 'NRC/11/2019/3', '2019-11-16', '2019-11-23', '7:50:24');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_gencaseid`
+--
+
+CREATE TABLE `tbl_gencaseid` (
+  `id` int(11) NOT NULL,
+  `code` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tbl_gencaseid`
+--
+
+INSERT INTO `tbl_gencaseid` (`id`, `code`) VALUES
+(1, '0'),
+(9, '1'),
+(10, '2'),
+(11, '3');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_gender`
+--
+
+CREATE TABLE `tbl_gender` (
+  `id` int(11) NOT NULL,
+  `name` char(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tbl_gender`
+--
+
+INSERT INTO `tbl_gender` (`id`, `name`) VALUES
+(1, 'M'),
+(2, 'F');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_offence`
+--
+
+CREATE TABLE `tbl_offence` (
+  `id` int(11) NOT NULL,
+  `name` varchar(500) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tbl_offence`
+--
+
+INSERT INTO `tbl_offence` (`id`, `name`) VALUES
+(1, 'Illegal entry into a protected wildlife area without authority'),
+(2, 'Starting a fire '),
+(3, 'Illegal killing of wildlife protected species'),
+(4, 'Illegal mining '),
+(5, 'Illegal possession of devices capable of killing, Wounding wild animals'),
+(6, 'Illegal possession of wildlife protected species'),
+(7, 'Illegal cattle grazing '),
+(8, 'Cultivation and residing into a protected area');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_species`
+--
+
+CREATE TABLE `tbl_species` (
+  `id` int(11) NOT NULL,
+  `name` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tbl_species`
+--
+
+INSERT INTO `tbl_species` (`id`, `name`) VALUES
+(1, 'Elephant'),
+(2, 'Buffalo'),
+(3, 'Pangolin'),
+(4, 'Civet Cat'),
+(5, 'Cattle'),
+(6, 'Dog'),
+(7, 'Piper Genisis'),
+(8, 'Lion'),
+(9, 'Leopard'),
+(10, 'Cheetah'),
+(11, 'Hunting Tool'),
+(12, 'Fishing Tool'),
+(13, 'Fish'),
+(14, 'Chimpanzee'),
+(15, 'Gorilla'),
+(16, 'Ostrich');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_status`
+--
+
+CREATE TABLE `tbl_status` (
+  `id` int(11) NOT NULL,
+  `name` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tbl_status`
+--
+
+INSERT INTO `tbl_status` (`id`, `name`) VALUES
+(1, 'Bond'),
+(2, 'Exonerated'),
+(3, 'Jumped Bond'),
+(5, 'Warrant Of Arrest'),
+(6, 'Remand'),
+(7, 'Bail'),
+(8, 'Jumped Bail'),
+(9, 'Concluded'),
+(10, 'Custody');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_suspect`
+--
+
+CREATE TABLE `tbl_suspect` (
+  `id` int(11) NOT NULL,
+  `flagno` varchar(15) NOT NULL,
+  `flagdate` date NOT NULL,
+  `fname` varchar(20) NOT NULL,
+  `mname` varchar(20) DEFAULT NULL,
+  `sname` varchar(20) NOT NULL,
+  `gender` int(11) NOT NULL,
+  `offenceid` int(11) NOT NULL,
+  `districtid` int(11) NOT NULL,
+  `statusid` int(11) NOT NULL,
+  `comment` varchar(100) NOT NULL,
+  `dob` date DEFAULT NULL,
+  `residence` varchar(100) DEFAULT NULL,
+  `contact` int(11) DEFAULT NULL,
+  `nid` varchar(20) DEFAULT NULL,
+  `nationality` varchar(20) NOT NULL,
+  `passport` varchar(15) DEFAULT NULL,
+  `occupation` varchar(50) DEFAULT NULL,
+  `nok` varchar(50) DEFAULT NULL,
+  `ncontact` int(11) DEFAULT NULL,
+  `rtime` varchar(8) NOT NULL,
+  `sessionuser` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_suspect`
+--
+
+INSERT INTO `tbl_suspect` (`id`, `flagno`, `flagdate`, `fname`, `mname`, `sname`, `gender`, `offenceid`, `districtid`, `statusid`, `comment`, `dob`, `residence`, `contact`, `nid`, `nationality`, `passport`, `occupation`, `nok`, `ncontact`, `rtime`, `sessionuser`) VALUES
+(4, 'SAV/11/2019/1', '2019-11-16', 'Kkk', 'k', 'K', 1, 8, 3, 6, 'kkk', '2019-10-27', 'k', 0, 'Jujj', 'Kk', 'Kk', '', 'Kk', 0, '2:59:54', 'lam');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `userassigned`
+--
+
+CREATE TABLE `userassigned` (
+  `id` int(11) NOT NULL,
+  `userid` int(11) NOT NULL,
+  `roleid` int(11) NOT NULL,
+  `date` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `userassigned`
+--
+
+INSERT INTO `userassigned` (`id`, `userid`, `roleid`, `date`) VALUES
+(1, 1, 1, '2019-11-03'),
+(2, 1, 2, '2019-11-03'),
+(3, 1, 3, '2019-11-03'),
+(4, 1, 4, '2019-11-03');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `usertype` int(11) NOT NULL,
+  `username` varchar(20) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
+  `password` char(128) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
+  `salt` char(128) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
+  `email` varchar(50) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
+  `date` date NOT NULL,
+  `branchid` int(11) NOT NULL,
+  `agencyid` int(11) NOT NULL,
+  `contact` int(11) NOT NULL,
+  `sessionuser` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `usertype`, `username`, `password`, `salt`, `email`, `date`, `branchid`, `agencyid`, `contact`, `sessionuser`) VALUES
+(1, 1, 'admin', 'cc8094348d61bc6223b4b4b35e6a2c08b9a0072f', '1368915417', 'mussollinfred@yahoo.com', '2013-05-18', 1, 1, 0, ''),
+(16, 3, 'lam', '2bc5e6c24fbb03d7b86afdc58bc0d85681995846', '1573899895', 'l@sure.com', '2019-11-16', 1, 1, 775555555, 'admin'),
+(17, 3, 'david', 'e6d4cba13df0b4730c2360937557be912f2c001d', '1573901058', 'd@sure.com', '2019-11-16', 1, 4, 787324277, 'admin');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `usertype`
+--
+
+CREATE TABLE `usertype` (
+  `id` int(11) NOT NULL,
+  `name` varchar(15) COLLATE latin1_general_ci NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+
+--
+-- Dumping data for table `usertype`
+--
+
+INSERT INTO `usertype` (`id`, `name`) VALUES
+(1, 'Admin'),
+(2, 'Clerk'),
+(3, 'Api');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `tbl_agency`
+--
+ALTER TABLE `tbl_agency`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tbl_branch`
+--
+ALTER TABLE `tbl_branch`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tbl_country`
+--
+ALTER TABLE `tbl_country`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tbl_entities`
+--
+ALTER TABLE `tbl_entities`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tbl_flag`
+--
+ALTER TABLE `tbl_flag`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tbl_flagcase`
+--
+ALTER TABLE `tbl_flagcase`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tbl_gencaseid`
+--
+ALTER TABLE `tbl_gencaseid`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tbl_suspect`
+--
+ALTER TABLE `tbl_suspect`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `usertype`
+--
+ALTER TABLE `usertype`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `tbl_agency`
+--
+ALTER TABLE `tbl_agency`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `tbl_branch`
+--
+ALTER TABLE `tbl_branch`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+
+--
+-- AUTO_INCREMENT for table `tbl_country`
+--
+ALTER TABLE `tbl_country`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT for table `tbl_entities`
+--
+ALTER TABLE `tbl_entities`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `tbl_flag`
+--
+ALTER TABLE `tbl_flag`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `tbl_flagcase`
+--
+ALTER TABLE `tbl_flagcase`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `tbl_gencaseid`
+--
+ALTER TABLE `tbl_gencaseid`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+
+--
+-- AUTO_INCREMENT for table `tbl_suspect`
+--
+ALTER TABLE `tbl_suspect`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+
+--
+-- AUTO_INCREMENT for table `usertype`
+--
+ALTER TABLE `usertype`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+COMMIT;
