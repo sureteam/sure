@@ -1,0 +1,180 @@
+/* CSS Document */
+
+ .gridview
+{
+    width: 100%;
+    background-color: #fff;
+    margin: 5px 0 10px 0;
+    border: solid 1px #525252;
+    border-collapse:collapse;
+}
+.gridview td
+{
+    padding: 2px;
+    border: solid 1px #c1c1c1;
+    color: #717171;
+}
+.gridview th
+{
+    padding: 4px 2px;
+    color: #fff;
+    background: #424242;
+    border-left: solid 1px #525252;
+    font-size: 0.9em;
+}
+.gridview .gridview_alter 
+{
+    background: #E7E7E7;
+}
+.gridview .gridview_pager 
+{
+    background: #424242;
+}
+.gridview .gridview_pager table 
+{
+    margin: 5px 0;
+}
+.gridview .gridview_pager td
+{
+    border-width: 0;
+    padding: 0 6px;
+    border-left: solid 1px #666;
+    font-weight: bold;
+    color: #fff;
+    line-height: 12px;
+ }  
+.gridview .gridview_pager a 
+{
+    color: #666;
+    text-decoration: none;
+}
+.gridview .gridview_pager a:hover 
+{
+    color: #000;
+    text-decoration: none;
+}
+
+
+.grid {
+color: #333;
+font-family: Helvetica, Arial, sans-serif;
+ width:100%;
+border-collapse:collapse; 
+border-spacing: 0;
+font-size:9px;
+width:100%; 
+}
+
+.grid td, th {
+border: 1px solid transparent;  
+height: 30px;
+transition: all 0.3s;
+font-weight:bold;
+cursor:pointer;
+}
+
+.grid th {
+background: #DFDFDF;   
+font-weight: bold;
+font-size:10px;
+}
+
+.grid td {
+background: #FAFAFA;
+text-align: center;
+}
+
+ 
+.grid tr:nth-child(even) td { background: #F1F1F1;font-size:12px; }  
+.grid tr:nth-child(odd) td { background: #FEFEFE; font-size:12px;} 
+.grid tr td:hover { background: #666; color: #FFF; font-size:18px;}
+
+
+.view {
+width: 100%;
+    background-color: #fff;
+    margin: 5px 0 10px 0;
+    border: solid 1px #525252;
+    border-collapse:collapse;
+	 
+}
+.view th {
+	font: bold 11px "Trebuchet MS", Verdana, Arial, Helvetica,sans-serif;
+	color: #6D929B;
+	border-right: 1px solid #C1DAD7;
+	border-bottom: 1px solid #C1DAD7;
+	border-top: 1px solid #C1DAD7;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: left;
+	padding: 6px 6px 6px 2px;
+	background: #CAE8EA url(images/bg_header.jpg) no-repeat;
+}
+
+.view th.nobg {
+	border-top: 0;
+	border-left: 0;
+	border-right: 1px solid #C1DAD7;
+	background: none;
+}
+.view th.spec {	
+	border-left: 1px solid #C1DAD7;
+	border-top: 0;
+	background: #fff url(images/bullet1.gif) no-repeat;
+	font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica,
+	sans-serif;
+}
+
+.view th.specalt {
+	border-left: 1px solid #C1DAD7;
+	border-top: 0;
+	background: #f5fafa url(images/bullet2.gif) no-repeat;
+	font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica,
+	sans-serif;
+	color: #B4AA9D;
+}
+
+.view td {
+	border-right: 1px solid #C1DAD7;
+	border-bottom: 1px solid #C1DAD7;
+	background: #fff;
+	padding: 6px 6px 6px 2px;
+	color: #6D929B;
+	font:16px "Trebuchet MS", Verdana, Arial, Helvetica,sans-serif;
+}
+
+
+.view td.alt {
+	background: #F5FAFA;
+	color: #B4AA9D;
+	font:16px "Trebuchet MS", Verdana, Arial, Helvetica,sans-serif;
+}
+
+
+.update th {
+
+font: bold 11px "Trebuchet MS", Verdana, Arial, Helvetica,sans-serif;
+	color: #6D929B;
+	border-right: 1px solid #C1DAD7;
+	border-bottom: 1px solid #C1DAD7;
+	border-top: 1px solid #C1DAD7;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: left;
+	padding: 6px 6px 6px 2px;
+	background:#CFD3DE;
+}
+.update td {
+ 
+	background: #fff;
+	padding: 6px 6px 6px 2px;
+	color: #6D929B;
+	font:16px "Trebuchet MS", Verdana, Arial, Helvetica,sans-serif;
+}
+
+
+.update td.alt {
+	background: #F5FAFA;
+	color: #B4AA9D;
+	font:16px "Trebuchet MS", Verdana, Arial, Helvetica,sans-serif;
+}

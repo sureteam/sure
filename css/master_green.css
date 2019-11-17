@@ -1,0 +1,540 @@
+/* CSS Document */
+@charset "UTF-8";
+
+/*Master Globals*/
+/*
+ color blue @ #1B5790;
+*/
+/*
+@Blue color:#126CA3;
+@Oran color:#FF6600
+*/
+
+@import url("stylegreen.css");
+
+
+ 
+p{
+line-height:17px;
+margin:9px 0;
+}
+
+.NoBr{
+border-right:none!important;
+}
+
+*{
+padding:0;
+margin:0;
+}
+
+a img{
+border:none;
+}
+
+.clearfix{
+clear:both;
+}
+
+ul li{
+list-style-type:none;
+}
+
+/*Other Globals: Controll the entire body with fixed width*/
+
+#Wraptopheader{
+width:100%;
+border-bottom:1px solid #DAEB67;
+border-top:2px solid #8DAC22;
+background-color:#B3D632;/**/
+}
+
+#topheaderinner{
+width:97%;
+margin:0 auto;
+height:80px;
+min-width:70%;
+}
+
+#Logo{
+width:400px;
+height:80px;
+float:left;
+background-image:url(../images/logogreen.gif);
+background-position:top;
+background-repeat: no-repeat;/**/
+}
+
+#SearchBox{ width:240px; float:right;}
+#themes{ height:18px;  font-size:14px;}
+#themes ul li{ display:inline; color:#666699;}
+
+
+/*The search box section
+----------------------------------------------------------------------*/
+
+.search { 
+    float:right;
+	display: inline; 
+	width:240px; 
+	height: 22px; 
+	margin: 5px 0 0 0;
+	background: url(../images/search-field.gif) no-repeat 0 0;
+}
+
+.notext { font-size: 0; line-height: 0; text-indent: -4000px; } 
+
+.search .field { 
+	font-size: 10px; 
+	float: left; 
+	display: inline; margin: 5px 0 0 5px;
+	width:170px; 
+	border: 0;
+	background: none;
+	color: #616b63;
+}
+
+.search .btn { 
+	float: right; 
+	display: inline; 
+	height: 22px; 
+	width: 50px; 
+	background: url(../images/search-btng.jpg) no-repeat 0 0; 
+	border: 0;
+	margin:0; 
+	cursor: pointer;
+}
+
+#Wrapmainnav{
+width:100%;
+background-color:#7A951E/*#8DAC22*/;
+background-image:url(../images/navgreen.jpg);
+background-position:bottom;
+background-repeat:repeat-x;/**/
+
+}
+
+#Mainnavinner{
+width:97%;
+margin:0 auto;
+height:34px;
+min-width:70%;
+}
+
+
+#WrapMainContent{
+font:11px Tahoma,Arial,Verdana,  Helvetica, sans-serif;
+width:100%;
+background-image:url(../images/stripgreen.jpg);
+background-position:top;
+background-repeat:repeat-x;
+border-top:1px solid #506213;
+}
+
+#Wrapcontentinner{
+/*width:99%;
+padding:3px 0;
+border: 1px solid gray;*/
+margin:0 auto;
+
+}
+
+#first-column{
+float:left;
+/* background: #71C8E6rgb(240, 240, 240);*/
+width: 240px;
+/*margin:0 3px;*/
+padding:10px 0;
+}
+
+#first-columninner{
+/* background: #71C8E6rgb(240, 240, 240);*/
+width: 220px;
+border-left:1px solid #8DAC22;
+border-right:1px solid #8DAC22;
+border-top:1px solid #8DAC22;
+margin:0 auto;
+}
+
+#content {
+margin-left:250px;
+margin-right:10px;
+background:#fff/* rgb(240, 240, 240)*/;
+padding:10px;
+}
+
+/* Start Commented Backslash Hack \*/
+* html #content{height: 1%;}
+/*Holy Hack fix for ie6 and ie5 for mac peekaboo bug */
+
+
+ 
+
+.age{
+border:1px solid #B5C94C;
+background-color:#fff!important;
+}
+
+/*Left section*/
+
+#Menuleft{
+width:100%;
+}
+
+#Menuleft h1{
+font:bold 16px Arial, Helvetica, sans-serif;
+color:#FFFFFF;
+background-color:#395514;
+padding:3px 0;
+text-indent:5px;
+width:100%;
+}
+
+#navigation {
+ width:100%; 
+} 
+#navigation ul {
+ list-style: none;
+ margin: 0;
+ padding: 0; 
+ border-top: 1px dotted #ccc; 
+} 
+#navigation li {
+ 
+} 
+
+#navigation li a:link, #navigation li a:visited  {
+width: 100%;
+text-indent:30px;
+font-weight:bold; 
+ font-size:11px;
+ display: block;
+ padding:10px 0;
+  background-color: #fff;
+  border-bottom: 1px dotted #ccc; 
+ /*border-right: 1px solid #711515;
+ background-color: #B51032;*/
+color: #3DA9D8;
+text-decoration: none; 
+} 
+
+#navigation li a:hover {
+ color: #003366;
+ background-color:#EDF3FE;
+ }
+ 
+ * html #navigation li a {
+ width: 100%; 
+} 
+
+.account{
+background-image:url(../images/Account.gif);
+background-position:center left;
+background-repeat:no-repeat;
+}
+
+.comm{
+background-image:url(../images/comm.gif);
+background-position:center left;
+background-repeat:no-repeat;
+}
+
+.resultssearch{
+background-image:url(../images/results_search.gif);
+background-position:center left;
+background-repeat:no-repeat;
+}
+
+.results{
+background-image:url(../images/results.gif);
+background-position:center left;
+background-repeat:no-repeat;
+}
+
+.uresults{
+background-image:url(../images/uresults.gif);
+background-position:center left;
+background-repeat:no-repeat;
+}
+
+.board{
+background-image:url(../images/board.gif);
+background-position:center left;
+background-repeat:no-repeat;
+}
+
+.lists{
+background-image:url(../images/lists.gif);
+background-position:center left;
+background-repeat:no-repeat;
+}
+
+.out{
+background-image:url(../images/Favorite.gif);
+background-position:center left;
+background-repeat:no-repeat;
+}
+
+
+.ward{
+background-image:url(../images/ward.gif);
+background-position:center left;
+background-repeat:no-repeat;
+}
+
+.inc{
+background-image:url(../images/inc.gif);
+background-position:center left;
+background-repeat:no-repeat;
+}
+
+.theatre{
+background-image:url(../images/theatre.gif);
+background-position:center left;
+background-repeat:no-repeat;
+}
+
+.Settings{
+background-image:url(../images/Settings.gif);
+background-position:center left;
+background-repeat:no-repeat;
+}
+
+
+
+
+
+
+
+
+/*Accordions
+--------------------------------------------------------------------------------------*/
+
+/*The Push Menu
+---------------------------------------------------------------------------------------*/
+
+#accordion2					{width:220px; margin:0px auto; border-top:none;}
+.accordion2 				{width:220px; font:12px Tahoma,  Arial, Verdana,Helvetica, sans-serif; color:#333;}
+.accordion2 dt 				{width:220px; padding:4px 0; cursor:pointer; background-color:#20703D; background-image:url(../images/greenup.png); background-position:left center 							 background-repeat:no-repeat; border-bottom:1px solid #8DAC22; text-indent:35px; color: #003300; font-weight:bold; text-shadow: 0 1px 0 #E6F177;}
+.accordion2 dt:hover		{background-color:#30A559; background-image:url(../images/hover.jpg)!important; color: #204D89; text-shadow: 0 1px 0 #FFF2CF;}
+.accordion2 .open 			{background-color:#30A559; background-image:url(../images/current.jpg); color:#000; text-shadow: 0 1px 0 #FFDD81;}
+.accordion2 dd 				{overflow:hidden; background:#fff;}
+*html .accordion2 dd		{height:1%;/*Peekaboo fix in ie6*/}
+/*.accordion2 dd ul 			{}
+.accordion2 dd ul li		{padding:3px 0; border-bottom:1px dotted #6692CE; text-indent:8px; background-color: #fff;}
+.accordion2 dd ul li a		{color: #6692CE; text-decoration:none;}
+.accordion2 dd ul li a:hover{color: #003300; text-decoration:none;}*/
+
+.accordion2 dt span 				{ display:block; padding:4px 0;}
+.home{
+background-image:url(../images/acc/home.png); background-position:center left ; background-repeat:no-repeat;
+}
+
+.branch{
+background-image:url(../images/acc/branch.png); background-position:center left ; background-repeat:no-repeat;
+}
+.product{
+background-image:url(../images/acc/pdt.png); background-position:center left ; background-repeat:no-repeat;
+}
+.department{
+background-image:url(../images/acc/dpt.png); background-position:center left ; background-repeat:no-repeat;
+}
+.mail{
+background-image:url(../images/acc/mail_large.gif); background-position:center left ; background-repeat:no-repeat;
+}
+
+.calender{
+background-image: url(../images/acc/calendar.gif); background-position:center left ; background-repeat:no-repeat;
+}
+
+.contact{
+background-image:url(../images/acc/contact_large.gif); background-position:center left ; background-repeat:no-repeat;
+}
+
+.notes{
+background-image:url(../images/acc/notes_large.gif); background-position:center left ; background-repeat:no-repeat;
+}
+
+.settings{
+background-image:url(../images/acc/Settings.gif); background-position:center left ; background-repeat:no-repeat;
+}
+.folder{
+background-image:url(../images/acc/folder.gif); background-position:center left ; background-repeat:no-repeat;
+}
+.album{
+background-image:url(../images/acc/album.gif); background-position:center left ; background-repeat:no-repeat;
+}
+.tasks{
+background-image:url(../images/acc/task.gif); background-position:center left ; background-repeat:no-repeat;
+}
+
+
+.delete{
+background-image:url(../images/acc/deleted.gif); background-position:center left; background-repeat:no-repeat; 
+}
+
+.draft{
+background-image:url(../images/acc/drafts.gif); background-position:center left; background-repeat:no-repeat; 
+}
+
+.inbox{
+background-image:url(../images/acc/inbox.gif); background-position:center left; background-repeat:no-repeat; 
+}
+
+.junk{
+background-image:url(../images/acc/junk.gif); background-position:center left; background-repeat:no-repeat; 
+}
+
+.out{
+background-image:url(../images/acc/outbox.gif); background-position:center left; background-repeat:no-repeat; 
+}
+.user{
+background-image:url(../images/acc/user.png); background-position:center left; background-repeat:no-repeat; 
+}
+
+.sent{
+background-image:url(../images/acc/sentItems.gif); background-position:center left; background-repeat:no-repeat; 
+}
+.logout{
+background-image:url(../images/logout.png); background-position:center left ; background-repeat:no-repeat;
+}
+/*Vertical Navigations / V-Navs / 
+----------------------------------------------------------------------------------------------*/
+
+.verticalNav				{width:100%;}	 
+.verticalNav ul li			{list-style: none;	margin: 0;	padding: 0;} 
+.verticalNav li a:link, .verticalNav li a:visited { 
+	width: 100%; 
+	display: block;
+	padding:4px 0;
+	background-color: #fff;
+	border-bottom: 1px dotted #6692CE;
+	color: #204D89;
+	text-decoration: none;
+	text-indent:25px; 
+}
+ 
+.verticalNav  li a:hover 		{color:#6692CE;}
+* html .verticalNav li a 		{width: 100%;}
+
+.topNav{
+width:100%;
+background-color:#ADD1FF;
+height:31px;
+border-bottom:1px solid #6692CE;
+}
+
+
+.topNav ul			{ font-family:Arial, Helvetica, sans-serif;color:#204D89; text-align:center; width:100%; }
+.topNav ul li 		{display:inline; font-size:1em;}
+.topNav ul li a		{padding:5px 15px; color:#204D89; background-image:url(../images/up.jpg); background-position:top left; background-repeat:repeat-x; 
+					 border-right:1px solid #6692CE; 	text-decoration:none; float:left;}
+.topNav ul li a:hover{color:#003366; background-image:url(../images/hover.jpg); background-position:top left; background-repeat:repeat-x;}
+.topNav .current		{color:#003366!important; background-image:url(../images/current.jpg)!important; background-position:top left; background-repeat:repeat-x;}
+
+
+/*- Category Navigation -*/
+.nav2, .nav2 * {
+	margin:0;
+	padding:0;
+	
+}
+
+.nav2 .current		{color:#003366!important; text-shadow: 0 1px 0 #FFE08D; background-image:url(../images/current.jpg)!important; background-position:top left; background-repeat:repeat-x;}
+
+.nav2 {
+	height: 30px;
+	font-size:11px;	
+	position:relative;
+    background-color:#ADD1FF;
+	background-image:url(../images/greenup.jpg); background-position:top left; background-repeat:repeat-x;
+    border-bottom:1px solid #506213;
+	border-top: 1px solid #B5C94C;
+	border-left: 1px solid #B5C94C;
+	border-right: 1px solid #B5C94C;
+} 
+
+/*IE6 needs this*/
+.nav2 ul {
+	float: left;
+	position:relative;
+}
+
+.nav2 li {
+	line-height: 30px;
+	float: left;
+	list-style:none;
+	z-index:999;
+}
+.nav2 li.current ul {
+	z-index: 999;	
+}
+
+.nav2 li.sfHover ul,
+ul.nav2 li:hover ul {
+	z-index: 1000;
+	/*background:#262626;*/
+	background-image:url(../images/hover.jpg); background-position:top left; background-repeat:repeat-x;
+	color: #ffffff;
+	text-decoration: none;		
+}
+.nav2 li li {
+}
+.nav2 a {
+	color: #003300;
+	display: block;
+	padding: 0 13px;
+	text-decoration:none;
+	font-weight:bold;
+	text-shadow: 0 1px 0 #DBEC68;
+}
+
+.nav2 li ul {
+	left:0;
+	top:-999em;
+	position:absolute;
+	width:960px;
+}
+
+.nav2 li:hover,
+.nav2 li.sfHover,
+.nav2 li.current,
+.nav2 a:focus, .nav2 a:hover, .nav2 a:active {
+	color: #FF7800;
+	text-decoration: none;
+	/*background: #262626;*/
+	background-image:url(../images/hover.jpg); background-position:top left; background-repeat:repeat-x;
+	text-shadow: 0 1px 0 #FFF7E0;
+}
+
+.nav2 li.sfHover a,
+.nav2 li.current a,
+.nav2 a:focus, .nav2 a:hover, .nav2 a:active {
+	border-bottom: none;
+}
+.nav2 li li.current a {
+	font-weight: bold;
+}
+.nav2 li li:hover,
+.nav2 li li a:focus, .nav2 li li a:hover, .nav2 li li a:active {
+
+}
+.nav2 li:hover ul, /* pure CSS hover is removed below */
+body .nav2 li.current ul, /* this must be more specific than the .superfish override below */
+ul.nav2 li.sfHover ul {
+	top:2.5em;
+}
+
+.nav2 li:hover li ul,
+.nav2 li.sfHover li ul {
+	top:-999em;
+}
+.nav2 li li:hover ul, /* pure CSS hover is removed below */
+ul.nav2 li li.sfHover ul {
+	top:2.5em;
+}
+
+
+
+
+

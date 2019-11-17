@@ -1,0 +1,119 @@
+/* CSS Document */
+
+.info, .success, .warning, .error, .validation, .removed, .show, .display {
+border: 1px solid;
+margin: 10px 0px;
+padding:15px 10px 15px 50px;
+background-repeat: no-repeat;
+background-position: 10px center;
+font-size:18px;
+}
+.info {
+color: #00529B;
+background-color: #BDE5F8;
+background-image: url('../images/info.png');
+}
+.success {
+color: #4F8A10;
+background-color: #DFF2BF;
+background-image:url('../images/success.png');
+}
+.warning {
+color: #9F6000;
+background-color: #FEEFB3;
+background-image: url('../images/warning.png');
+ 
+}
+.error {
+color: #D8000C;
+background-color: #FFBABA;
+background-image: url('../images/error.png');
+ 
+}
+.removed {
+color:#669900;
+background-color: #FFBABA;
+background-image: url('../images/removed.png');
+width:100%;
+}
+.show {
+color:#669900;
+background-color: #fafafa;
+ font-family: Trebuchet, Arial, sans-serif;
+}
+
+.level {
+height:20px;
+color:#669900;
+background-color:#FFFF00;
+box-shadow: 1px 1px 5px #66CC00;
+}
+.leveldown {
+height:20px;
+color:#FFFFFF;
+background-color:#FF0000;
+box-shadow: 1px 1px 5px #66CC00;
+}
+.levelup {
+height:20px;
+color:#FF0000;
+background-color:#00FF00;
+box-shadow: 1px 1px 5px #66CC00;
+}
+.new{
+color:#996600;
+background-color:#99FF66;
+box-shadow: 1px 1px 5px #66CC00;
+}
+.readonly{
+background-color:#EEEEEE;
+width: 100px;
+height: 29px;
+border-radius: 3px;
+border: 1px solid #CCC;
+padding: 2px;
+font-weight: 200;
+font-size: 15px;
+font-family: Verdana;
+box-shadow: 1px 1px 5px #CCC;
+ 
+}
+.display {
+color: #4F8A10;
+background-color: #DFF2BF;
+}
+.confirmed {
+color:#FFFFFF;
+background-color:#33CC00;
+border-radius: 3px;
+font-weight:bold;
+text-align:center;
+box-shadow: 1px 1px 5px #CCC;
+font-size:12px;
+}
+.booked {
+color:#666600;
+background-color:#FFFF00;
+border-radius: 3px;
+font-weight:bold;
+text-align:center;
+box-shadow: 1px 1px 5px #CCC;
+font-size:12px;
+}
+.balance {
+color:#FF0000;
+border-radius: 3px;
+font-weight:bold;
+text-align:right;
+box-shadow: 1px 1px 5px #CCC;
+font-size:20px;
+}
+.duedate {
+color:#666600;
+background-color:#FF0000;
+border-radius: 3px;
+font-weight:bold;
+text-align:center;
+box-shadow: 1px 1px 5px #CCC;
+font-size:12px;
+}

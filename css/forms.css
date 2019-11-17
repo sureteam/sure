@@ -1,0 +1,204 @@
+body{
+font-family:'Raleway',sans-serif
+}
+img#logo{
+margin-left:90px
+}
+div#first{
+width:350px;
+height:auto;
+margin:5px auto 0;
+padding:10px;
+background-color:#EEE;
+color:#333;
+border:2px solid #C2D6FF;
+border-radius:40px 0 40px 0
+}
+label{
+font-size:15px;
+font-weight:700
+}
+input#tname{
+background-image:url(../images/man.jpg);
+background-repeat:no-repeat;
+background-position:6px;
+border:1px solid #DADADA;
+margin-top:10px;
+margin-bottom:10px;
+padding-left:35px;
+width:310px;
+height:30px;
+font-size:14px;
+box-shadow:0 0 10px;
+-webkit-box-shadow:0 0 10px;
+/* For I.E */
+-moz-box-shadow:0 0 10px;
+/* For Mozilla Web Browser */
+border-radius:5px;
+-webkit-border-radius:5px;
+/* For I.E */
+-moz-border-radius:5px
+/* For Mozilla Web Browser */
+}
+input#id{
+background-image:url(../images/num.jpg);
+background-repeat:no-repeat;
+background-position:6px;
+border:1px solid #DADADA;
+margin-top:10px;
+margin-bottom:10px;
+padding-left:35px;
+width:310px;
+height:30px;
+font-size:14px;
+box-shadow:0 0 10px;
+-webkit-box-shadow:0 0 10px;
+/* For I.E */
+-moz-box-shadow:0 0 10px;
+/* For Mozilla Web Browser */
+border-radius:5px;
+-webkit-border-radius:5px;
+/* For I.E */
+-moz-border-radius:5px
+/* For Mozilla Web Browser */
+}
+input#nation{
+background-image:url(../images/nation.jpg);
+background-repeat:no-repeat;
+background-position:6px;
+border:1px solid #DADADA;
+margin-top:10px;
+margin-bottom:10px;
+padding-left:35px;
+width:310px;
+height:30px;
+font-size:14px;
+box-shadow:0 0 10px;
+-webkit-box-shadow:0 0 10px;
+/* For I.E */
+-moz-box-shadow:0 0 10px;
+/* For Mozilla Web Browser */
+border-radius:5px;
+-webkit-border-radius:5px;
+/* For I.E */
+-moz-border-radius:5px
+/* For Mozilla Web Browser */
+}
+input#contact{
+background-image:url(../images/fone.jpg);
+background-repeat:no-repeat;
+background-position:6px;
+border:1px solid #DADADA;
+margin-top:10px;
+margin-bottom:10px;
+padding-left:35px;
+width:310px;
+height:30px;
+font-size:14px;
+box-shadow:0 0 10px;
+-webkit-box-shadow:0 0 10px;
+/* For I.E */
+-moz-box-shadow:0 0 10px;
+/* For Mozilla Web Browser */
+border-radius:5px;
+-webkit-border-radius:5px;
+/* For I.E */
+-moz-border-radius:5px
+/* For Mozilla Web Browser */
+}
+
+input#amount{
+background-image:url(../images/num.jpg);
+background-repeat:no-repeat;
+background-position:6px;
+border:1px solid #DADADA;
+margin-top:10px;
+margin-bottom:10px;
+padding-left:35px;
+width:310px;
+height:30px;
+font-size:14px;
+box-shadow:0 0 10px;
+-webkit-box-shadow:0 0 10px;
+/* For I.E */
+-moz-box-shadow:0 0 10px;
+/* For Mozilla Web Browser */
+border-radius:5px;
+-webkit-border-radius:5px;
+/* For I.E */
+-moz-border-radius:5px
+/* For Mozilla Web Browser */
+}
+select#grp{
+background-image:url(../images/group.jpg);
+background-repeat:no-repeat;
+background-position:6px;
+border:1px solid #DADADA;
+margin-top:10px;
+margin-bottom:10px;
+padding-left:35px;
+width:310px;
+height:30px;
+font-size:14px;
+box-shadow:0 0 10px;
+-webkit-box-shadow:0 0 10px;
+/* For I.E */
+-moz-box-shadow:0 0 10px;
+/* For Mozilla Web Browser */
+border-radius:5px;
+-webkit-border-radius:5px;
+/* For I.E */
+-moz-border-radius:5px
+/* For Mozilla Web Browser */
+}
+input#submit {
+background-color:#cc7a66;
+border-radius:5px;
+border:none;
+padding:10px 25px;
+color:#FFF;
+text-shadow:1px 1px 1px #949494;
+margin-left:120px
+}
+input#submit:hover{
+background-color:#FF9980
+}
+
+
+.button-link {
+    [...]
+	color:#FFFFFF;
+	cursor:pointer;
+	height:40px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: solid 1px #20538D;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+/*
+input{
+background-repeat:no-repeat;
+background-position:6px;
+border:1px solid #DADADA;
+margin-top:10px;
+margin-bottom:10px;
+padding-left:35px;
+width:110px;
+height:30px;
+font-size:14px;
+box-shadow:0 0 10px;
+-webkit-box-shadow:0 0 10px;
+/* For I.E 
+-moz-box-shadow:0 0 10px;*/
+/* For Mozilla Web Browser 
+border-radius:5px;
+-webkit-border-radius:5px;*/
+/* For I.E 
+-moz-border-radius:5px*/
+/* For Mozilla Web Browser 
+}  
+*/

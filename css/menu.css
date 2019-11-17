@@ -1,0 +1,100 @@
+/* CSS Document */
+
+/* set up the button based on a width of 150px and 100px height */
+ ul li, ul li a{
+
+    display:block;
+    width:155px;
+    height:130px;
+    text-align:center;
+    background-position:0 0;
+	padding-top:0;
+
+
+}
+
+ul li{
+
+    float:left;
+}
+
+/* roll over - move the background image by the height of the button (100px) */
+ul li a:hover{ 
+background-position:0 -100px;
+background-color:#20B6AD;
+ }
+
+/* active state - move the background image by twice height of the button (200px) */
+ul li a.active, ul li a.active:hover{ background-position:0 -200px; background-color:#20B6AD;}
+ 
+/* define each button (background image and text position) */
+ul li a.home
+{
+    background-image:url(../images/home.png); /* define image url */
+    padding-top:90px; /* position the text using a combination of padding / height) */
+    height: 40px;
+	border:0px #CCCCCC solid;
+text-align: center;
+color:#FFFFFF;
+font-size:17px;
+}
+ul li a.overview
+{
+    background-image:url(../images/overview.png); /* define image url */
+    padding-top:90px; /* position the text using a combination of padding / height) */
+    height: 40px;
+	border:0px #CCCCCC solid;
+text-align: center;
+color:#FFFFFF;
+font-size:17px;
+}
+ul li a.products
+{
+    background-image:url(../images/product.png); /* define image url */
+    padding-top:90px; /* position the text using a combination of padding / height) */
+    height: 40px;
+border:0px #CCCCCC solid;
+text-align: center;
+color:#FFFFFF;
+font-size:17px;
+}
+ul li a.purchase
+{
+    background-image:url(../images/purchase.png); /* define image url */
+    padding-top:90px; /* position the text using a combination of padding / height) */
+    height: 40px;
+border:0px #CCCCCC solid;
+text-align: center;
+color:#FFFFFF;
+font-size:17px;
+}
+ul li a.pos
+{
+    background-image:url(../images/pos.png); /* define image url */
+    padding-top:90px; /* position the text using a combination of padding / height) */
+    height: 40px;
+border:0px #CCCCCC solid;
+text-align: center;
+color:#FFFFFF;
+font-size:17px;
+}
+ul li a.operations
+{
+    background-image:url(../images/operations.png); /* define image url */
+    padding-top:90px; /* position the text using a combination of padding / height) */
+    height: 40px;
+border:0px #CCCCCC solid;
+text-align: center;
+color:#FFFFFF;
+font-size:17px;
+}
+ul li a.inventory
+{
+    background-image:url(../images/inventory.png); /* define image url */
+    padding-top:90px; /* position the text using a combination of padding / height) */
+    height: 40px;
+border:0px #CCCCCC solid;
+text-align: center;
+color:#FFFFFF;
+font-size:17px;
+}
